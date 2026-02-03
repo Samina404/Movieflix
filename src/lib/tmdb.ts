@@ -26,11 +26,13 @@ export const getMoviesByGenre = async (
   page = 1,
   sortBy = "popularity.desc"
 ): Promise<TMDBResponse<Movie>> => {
+  const today = new Date().toISOString().split("T")[0];
   const response = await api.get("/discover/movie", {
     params: {
       with_genres: genreId,
       page,
       sort_by: sortBy,
+      "release_date.lte": today,
     },
   });
   return response.data;
@@ -56,10 +58,12 @@ export const searchMovies = async (query: string, page = 1): Promise<TMDBRespons
 };
 
 export const getPopularMoviesByGenre = async (genreId: number): Promise<Movie[]> => {
+  const today = new Date().toISOString().split("T")[0];
   const response = await api.get("/discover/movie", {
     params: {
       with_genres: genreId,
       sort_by: "popularity.desc",
+      "release_date.lte": today,
       page: 1,
     },
   });

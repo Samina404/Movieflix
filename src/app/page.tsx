@@ -22,71 +22,73 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-12 pb-20">
-      {/* Hero Section */}
-      {heroMovie && (
-        <section className="relative w-full aspect-[21/9] min-h-[450px] rounded-3xl overflow-hidden group shadow-2xl">
-          <img
-            src={`https://image.tmdb.org/t/p/original${heroMovie.backdrop_path}`}
-            alt={heroMovie.title}
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#020617]/40 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#020617] via-transparent to-transparent" />
-          
-          <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end max-w-4xl">
-            <div className="space-y-6">
-              <div className="flex items-center gap-3">
-                <span className="px-3 py-1 bg-primary/20 backdrop-blur-md rounded-full text-primary text-xs font-bold uppercase tracking-wider border border-primary/20">
-                  Featured Movie
-                </span>
-                <div className="flex items-center gap-1.5 text-white/60 text-sm font-medium">
-                  <Calendar size={14} />
-                  <span>{heroMovie.release_date?.split("-")[0]}</span>
+      <div className="-space-y-4">
+        {/* Hero Section */}
+        {heroMovie && (
+          <section className="relative w-full aspect-[21/9] min-h-[450px] rounded-3xl overflow-hidden group shadow-2xl">
+            <img
+              src={`https://image.tmdb.org/t/p/original${heroMovie.backdrop_path}`}
+              alt={heroMovie.title}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0505] via-[#0a0505]/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0a0505] via-transparent to-transparent" />
+            
+            <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end max-w-4xl">
+              <div className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <span className="px-3 py-1 bg-primary/20 backdrop-blur-md rounded-full text-primary text-xs font-bold uppercase tracking-wider border border-primary/20">
+                    Featured Movie
+                  </span>
+                  <div className="flex items-center gap-1.5 text-white/60 text-sm font-medium">
+                    <Calendar size={14} />
+                    <span>{heroMovie.release_date?.split("-")[0]}</span>
+                  </div>
+                </div>
+
+                <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-white leading-tight drop-shadow-2xl">
+                  {heroMovie.title}
+                </h1>
+                
+                <p className="text-white/70 text-base md:text-lg line-clamp-3 max-w-2xl font-medium leading-relaxed">
+                  {heroMovie.overview}
+                </p>
+
+                <div className="flex items-center gap-6 text-sm font-semibold text-white/80">
+                   <div className="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-lg border border-white/10">
+                      <Star className="text-yellow-500 fill-yellow-500" size={16} />
+                      <span>{heroMovie.vote_average.toFixed(1)} <span className="text-white/40 font-normal ml-0.5">Rating</span></span>
+                   </div>
+                   <div className="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-lg border border-white/10">
+                      <Users className="text-primary" size={16} />
+                      <span>{heroMovie.vote_count.toLocaleString()} <span className="text-white/40 font-normal ml-0.5">Votes</span></span>
+                   </div>
+                </div>
+
+                <div className="flex items-center gap-4 pt-4">
+                  <Link 
+                    href={`/movie/${heroMovie.id}`} 
+                    className="flex items-center gap-3 px-8 py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/25"
+                  >
+                    <Play size={20} fill="currentColor" />
+                    Watch Trailer
+                  </Link>
+                  <Link 
+                    href={`/movie/${heroMovie.id}`} 
+                    className="flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-md text-white rounded-xl font-bold hover:bg-white/20 transition-all border border-white/10"
+                  >
+                    <Info size={20} />
+                    More Details
+                  </Link>
                 </div>
               </div>
-
-              <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-white leading-tight drop-shadow-2xl">
-                {heroMovie.title}
-              </h1>
-              
-              <p className="text-white/70 text-base md:text-lg line-clamp-3 max-w-2xl font-medium leading-relaxed">
-                {heroMovie.overview}
-              </p>
-
-              <div className="flex items-center gap-6 text-sm font-semibold text-white/80">
-                 <div className="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-lg border border-white/10">
-                    <Star className="text-yellow-500 fill-yellow-500" size={16} />
-                    <span>{heroMovie.vote_average.toFixed(1)} <span className="text-white/40 font-normal ml-0.5">Rating</span></span>
-                 </div>
-                 <div className="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-lg border border-white/10">
-                    <Users className="text-primary" size={16} />
-                    <span>{heroMovie.vote_count.toLocaleString()} <span className="text-white/40 font-normal ml-0.5">Votes</span></span>
-                 </div>
-              </div>
-
-              <div className="flex items-center gap-4 pt-4">
-                <Link 
-                  href={`/movie/${heroMovie.id}`} 
-                  className="flex items-center gap-3 px-8 py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/25"
-                >
-                  <Play size={20} fill="currentColor" />
-                  Watch Trailer
-                </Link>
-                <Link 
-                  href={`/movie/${heroMovie.id}`} 
-                  className="flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-md text-white rounded-xl font-bold hover:bg-white/20 transition-all border border-white/10"
-                >
-                  <Info size={20} />
-                  More Details
-                </Link>
-              </div>
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        )}
 
-      {/* Genre Filter Bar */}
-      <GenreBar genres={genres} />
+        {/* Genre Filter Bar */}
+        <GenreBar genres={genres} />
+      </div>
 
       {/* Recent Releases Section */}
       <section className="space-y-8">

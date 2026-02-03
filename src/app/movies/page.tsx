@@ -65,7 +65,7 @@ export default async function MoviesPage({ searchParams }: PageProps) {
             href={`/movies?page=${pageNum}`}
             className={`w-10 h-10 flex items-center justify-center rounded-lg border transition-all ${
               currentPage === pageNum 
-                ? 'bg-white text-black border-white font-bold' 
+                ? 'bg-primary text-white border-primary font-bold shadow-lg shadow-primary/25' 
                 : 'bg-white/5 border-white/10 text-white/70 hover:bg-white/10 hover:text-white'
             }`}
           >

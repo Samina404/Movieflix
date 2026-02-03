@@ -3,6 +3,7 @@ import MovieGrid from "@/components/MovieGrid";
 import RecentlyViewedHandler from "@/components/RecentlyViewedHandler";
 import WatchLaterButton from "@/components/WatchLaterButton";
 import Link from "next/link";
+import { Play, Calendar, Star, Clapperboard } from "lucide-react";
 import PlayTrailerButton from "@/components/PlayTrailerButton";
 
 export default async function MovieDetailsPage({ params }: { params: { id: string } }) {
@@ -19,11 +20,11 @@ export default async function MovieDetailsPage({ params }: { params: { id: strin
     .slice(0, 16);
 
   return (
-    <div className="space-y-12 pb-20 bg-[#050505] min-h-screen text-white">
+    <div className="space-y-12 pb-20 bg-[#0a0505] min-h-screen text-white">
       <RecentlyViewedHandler movie={movie} />
 
       {/* Hero Header Section - Reduced complexity and height */}
-      <section className="relative w-full min-h-[450px] md:h-[500px] overflow-hidden flex items-center">
+      <section className="relative w-full min-h-[450px] md:h-[500px] overflow-hidden flex items-center rounded-3xl group shadow-2xl">
         {/* Subtle Blurred Background */}
         <div className="absolute inset-0 z-0">
           <img
@@ -31,18 +32,26 @@ export default async function MovieDetailsPage({ params }: { params: { id: strin
             alt=""
             className="w-full h-full object-cover blur-xl opacity-80 transform scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0505] via-transparent to-transparent" />
         </div>
 
         {/* Content Container */}
         <div className="relative z-10 max-w-7xl mx-auto w-full px-6 flex flex-col md:flex-row gap-10 items-center md:items-center">
           {/* Smaller, Professional Poster */}
-          <div className="shrink-0 w-[220px] md:w-[240px] shadow-2xl rounded-2xl overflow-hidden border border-white/10">
-             <img
-                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                alt={movie.title}
-                className="w-full h-auto object-cover"
-             />
+          <div className="shrink-0 w-[220px] md:w-[240px] shadow-2xl rounded-2xl overflow-hidden border border-white/10 aspect-[2/3] bg-gradient-to-br from-white/5 to-transparent">
+             {movie.poster_path ? (
+               <img
+                  src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                  alt={movie.title}
+                  className="w-full h-full object-cover"
+               />
+             ) : (
+               <div className="w-full h-full flex flex-col items-center justify-center gap-4 bg-white/5 transition-all group-hover:bg-white/10">
+                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20 transition-transform group-hover:scale-110">
+                   <Clapperboard className="text-primary/40" size={32} />
+                 </div>
+               </div>
+             )}
           </div>
 
           {/* Right: Info Area */}

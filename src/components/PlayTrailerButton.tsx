@@ -25,7 +25,7 @@ export default function PlayTrailerButton({ videoKey }: PlayTrailerButtonProps) 
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#f59e0b] to-[#fbbf24] text-black font-bold rounded-xl hover:opacity-90 transition-all shadow-lg active:scale-95 group"
+        className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#f94a29] to-[#ef233c] text-white font-bold rounded-xl hover:opacity-90 transition-all shadow-lg active:scale-95 group"
       >
         <svg className="w-5 h-5 fill-current transform transition-transform group-hover:translate-x-1" viewBox="0 0 24 24">
           <path d="M8 5v14l11-7z" />

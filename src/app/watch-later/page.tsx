@@ -2,18 +2,14 @@
 
 import { useWatchLaterStore } from "@/store/watchLaterStore";
 import MovieGrid from "@/components/MovieGrid";
-import { useEffect, useState } from "react";
+import MovieGridSkeleton from "@/components/MovieGridSkeleton";
+import MoviePageLoading from "@/components/MoviePageLoading";
+import { useStore } from "@/hooks/useStore";
 
 export default function WatchLaterPage() {
-  const { movies } = useWatchLaterStore();
-  const [mounted, setMounted] = useState(false);
+  const movies = useStore(useWatchLaterStore, (state) => state.movies) || [];
 
-  // Avoid hydration mismatch when reading from localStorage
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
+  if (movies === null) return <MoviePageLoading titleWidth="w-72" count={6} />;
 
   return (
     <div className="space-y-8 pb-10">

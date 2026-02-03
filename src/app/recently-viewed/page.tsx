@@ -2,19 +2,15 @@
 
 import { useRecentlyViewedStore } from "@/store/recentlyViewedStore";
 import MovieGrid from "@/components/MovieGrid";
-import { useEffect, useState } from "react";
 import { Trash2 } from "lucide-react";
+import { useStore } from "@/hooks/useStore";
+import MoviePageLoading from "@/components/MoviePageLoading";
 
 export default function RecentlyViewedPage() {
-  const { movies, clearRecentlyViewed } = useRecentlyViewedStore();
-  const [mounted, setMounted] = useState(false);
+  const movies = useStore(useRecentlyViewedStore, (state) => state.movies) || [];
+  const { clearRecentlyViewed } = useRecentlyViewedStore();
 
-  // Avoid hydration mismatch when reading from localStorage
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
+  if (movies === null) return <MoviePageLoading titleWidth="w-80" count={6} />;
 
   return (
     <div className="space-y-8 pb-10">

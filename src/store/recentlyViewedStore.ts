@@ -5,6 +5,7 @@ import { Movie } from "@/types/movie";
 interface RecentlyViewedState {
   movies: Movie[];
   addToRecentlyViewed: (movie: Movie) => void;
+  clearRecentlyViewed: () => void;
 }
 
 export const useRecentlyViewedStore = create<RecentlyViewedState>()(
@@ -19,6 +20,7 @@ export const useRecentlyViewedStore = create<RecentlyViewedState>()(
             movies: [movie, ...filtered].slice(0, 20),
           };
         }),
+      clearRecentlyViewed: () => set({ movies: [] }),
     }),
     {
       name: "recently-viewed-storage",

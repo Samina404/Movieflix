@@ -18,15 +18,26 @@ export default async function SearchPage({
 
   return (
     <div className="space-y-8 pb-10">
-      <div className="border-b border-white/5 pb-8">
-        <h1 className="text-4xl md:text-5xl font-black italic uppercase tracking-tighter">
-          {query ? `Search: ${query}` : "Search Movies"}
-        </h1>
-        {query && (
-          <p className="text-white/50 text-sm mt-2">
-            Found <span className="text-primary font-bold">{moviesData?.total_results.toLocaleString()}</span> results for your query
-          </p>
-        )}
+      <div className="relative">
+        {/* Background Decorative Glow */}
+        <div className="absolute -top-24 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-[100px] -z-10" />
+        
+        <div className="border-b border-white/5 pb-12">
+          <h1 className="text-5xl md:text-7xl font-black italic uppercase tracking-tighter primary-gradient-text leading-none">
+            {query ? `Search: ${query}` : "Search Movies"}
+          </h1>
+          {query && (
+            <div className="flex items-center gap-4 mt-6">
+              <p className="text-white/50 text-base font-medium">
+                Found <span className="text-white font-bold">{moviesData?.total_results.toLocaleString()}</span> results for your query
+              </p>
+              <div className="h-4 w-px bg-white/10" />
+              <p className="text-white/30 text-sm italic">
+                Showing results for &quot;{query}&quot;
+              </p>
+            </div>
+          )}
+        </div>
       </div>
 
       {query ? (

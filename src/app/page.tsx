@@ -90,12 +90,12 @@ export default async function HomePage() {
 
       {/* Recent Releases Section */}
       <section className="space-y-8">
-        <div className="flex items-end justify-between border-l-4 border-primary pl-6">
+        <div className="flex items-end justify-between border-l-4 border-primary/50 pl-6 py-2">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight text-white">Recent Releases</h2>
-            <p className="text-white/40 text-sm mt-1 font-medium">Discover the latest movies added to our library</p>
+            <h2 className="text-3xl font-black italic uppercase tracking-tighter primary-gradient-text leading-tight">Recent Releases</h2>
+            <p className="text-white/40 text-xs mt-1 font-bold uppercase tracking-[0.1em]">Discover the latest cinema</p>
           </div>
-          <Link href="/movies" className="text-primary text-sm font-bold hover:underline underline-offset-4">
+          <Link href="/movies" className="text-primary/80 text-xs font-black uppercase tracking-widest hover:text-primary transition-all">
             Browse All
           </Link>
         </div>

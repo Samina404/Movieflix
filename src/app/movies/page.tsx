@@ -34,9 +34,16 @@ export default async function MoviesPage({ searchParams }: PageProps) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-8">
-      <div>
-        <h1 className="text-3xl font-bold tracking-tight text-white mb-2">New Releases</h1>
-        <p className="text-white/60">Discover the latest movies in theaters and online.</p>
+      <div className="relative">
+        <div className="absolute -top-24 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-[100px] -z-10" />
+        <div className="border-b border-white/5 pb-12">
+          <h1 className="text-5xl md:text-7xl font-black italic uppercase tracking-tighter primary-gradient-text leading-none mb-4">
+            New Releases
+          </h1>
+          <p className="text-white/50 text-base md:text-lg max-w-2xl font-medium leading-relaxed">
+            Discover the latest movies in theaters and online. Our list is constantly updated with the freshest content from around the world.
+          </p>
+        </div>
       </div>
 
       <Suspense fallback={<div className="h-96 animate-pulse bg-white/5 rounded-2xl" />}>

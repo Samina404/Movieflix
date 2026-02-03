@@ -38,7 +38,7 @@ export const getMoviesByGenre = async (
 
 export const getMovieDetails = async (id: string | number): Promise<MovieDetails> => {
   const response = await api.get(`/movie/${id}`, {
-    params: { append_to_response: "credits" },
+    params: { append_to_response: "credits,videos" },
   });
   return response.data;
 };
@@ -64,4 +64,11 @@ export const getPopularMoviesByGenre = async (genreId: number): Promise<Movie[]>
     },
   });
   return response.data.results.slice(0, 5);
+};
+
+export const getNewMovies = async (page = 1): Promise<TMDBResponse<Movie>> => {
+  const response = await api.get("/movie/now_playing", {
+    params: { page },
+  });
+  return response.data;
 };

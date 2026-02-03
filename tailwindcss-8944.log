@@ -1,0 +1,822 @@
+2026-02-03T09:55:01.769722Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-02-03T09:55:01.769890Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "F:\\My work\\Movie_Discovery\\tmdb-movie-app", pattern: "**/*", negated: false }
+2026-02-03T09:55:01.770232Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-02-03T09:55:01.770258Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "F:\\My work\\Movie_Discovery\\tmdb-movie-app" }
+2026-02-03T09:55:01.774001Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:01.791778Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\eslint.config.mjs"
+2026-02-03T09:55:01.792377Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\globals_debug.txt"
+2026-02-03T09:55:01.792542Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\next.config.ts"
+2026-02-03T09:55:01.793108Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\package.json"
+2026-02-03T09:55:01.793253Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\postcss.config.mjs"
+2026-02-03T09:55:01.793456Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T09:55:01.793772Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\file.svg"
+2026-02-03T09:55:01.793922Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\globe.svg"
+2026-02-03T09:55:01.797420Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\next.svg"
+2026-02-03T09:55:01.797596Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\vercel.svg"
+2026-02-03T09:55:01.797666Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\window.svg"
+2026-02-03T09:55:01.797765Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\README.md"
+2026-02-03T09:55:01.797880Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T09:55:01.798042Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T09:55:01.798190Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T09:55:01.798347Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T09:55:01.798497Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]\\loading.tsx"
+2026-02-03T09:55:01.798577Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]\\page.tsx"
+2026-02-03T09:55:01.798682Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\globals.css"
+2026-02-03T09:55:01.798756Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\layout.tsx"
+2026-02-03T09:55:01.798820Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\loading.tsx"
+2026-02-03T09:55:01.798923Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T09:55:01.799067Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T09:55:01.799198Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]\\loading.tsx"
+2026-02-03T09:55:01.799335Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]\\page.tsx"
+2026-02-03T09:55:01.799432Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\page.tsx"
+2026-02-03T09:55:01.799547Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T09:55:01.799704Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed\\page.tsx"
+2026-02-03T09:55:01.799833Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T09:55:01.799980Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search\\page.tsx"
+2026-02-03T09:55:01.800106Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T09:55:01.800273Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later\\page.tsx"
+2026-02-03T09:55:01.800595Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T09:55:01.800940Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreList.tsx"
+2026-02-03T09:55:01.801030Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreSection.tsx"
+2026-02-03T09:55:01.801109Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\LoadingSkeleton.tsx"
+2026-02-03T09:55:01.801185Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\MovieCard.tsx"
+2026-02-03T09:55:01.801264Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\MovieGrid.tsx"
+2026-02-03T09:55:01.801336Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Navbar.tsx"
+2026-02-03T09:55:01.801442Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Pagination.tsx"
+2026-02-03T09:55:01.801540Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\RecentlyViewedHandler.tsx"
+2026-02-03T09:55:01.801644Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\SortSelector.tsx"
+2026-02-03T09:55:01.801745Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\WatchLaterButton.tsx"
+2026-02-03T09:55:01.801929Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T09:55:01.802120Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib\\helpers.ts"
+2026-02-03T09:55:01.802189Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib\\tmdb.ts"
+2026-02-03T09:55:01.802300Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T09:55:01.802426Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store\\recentlyViewedStore.ts"
+2026-02-03T09:55:01.802491Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store\\watchLaterStore.ts"
+2026-02-03T09:55:01.802674Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T09:55:01.802806Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types\\movie.ts"
+2026-02-03T09:55:01.802943Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\tsconfig.json"
+2026-02-03T09:55:01.803082Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:01.803099Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:01.803110Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:01.803118Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 37 file(s)
+2026-02-03T09:55:01.803806Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreSection.tsx"
+2026-02-03T09:55:01.818331Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\window.svg"
+2026-02-03T09:55:01.821105Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\eslint.config.mjs"
+2026-02-03T09:55:01.823194Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\MovieCard.tsx"
+2026-02-03T09:55:01.823200Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib\\tmdb.ts"
+2026-02-03T09:55:01.823194Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed\\page.tsx"
+2026-02-03T09:55:01.825583Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\LoadingSkeleton.tsx"
+2026-02-03T09:55:01.837495Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\MovieGrid.tsx"
+2026-02-03T09:55:01.838187Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search\\page.tsx"
+2026-02-03T09:55:01.842601Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\SortSelector.tsx"
+2026-02-03T09:55:01.842638Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Pagination.tsx"
+2026-02-03T09:55:01.845062Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later\\page.tsx"
+2026-02-03T09:55:01.855873Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\RecentlyViewedHandler.tsx"
+2026-02-03T09:55:01.856487Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Navbar.tsx"
+2026-02-03T09:55:01.863023Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store\\watchLaterStore.ts"
+2026-02-03T09:55:01.863007Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store\\recentlyViewedStore.ts"
+2026-02-03T09:55:01.866973Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreList.tsx"
+2026-02-03T09:55:01.867544Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\WatchLaterButton.tsx"
+2026-02-03T09:55:01.867624Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib\\helpers.ts"
+2026-02-03T09:55:01.870295Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]\\loading.tsx"
+2026-02-03T09:55:01.876602Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types\\movie.ts"
+2026-02-03T09:55:01.884203Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\postcss.config.mjs"
+2026-02-03T09:55:01.884429Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]\\page.tsx"
+2026-02-03T09:55:01.897678Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\file.svg"
+2026-02-03T09:55:01.916429Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\vercel.svg"
+2026-02-03T09:55:01.924110Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\next.config.ts"
+2026-02-03T09:55:01.924635Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\package.json"
+2026-02-03T09:55:01.926236Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\tsconfig.json"
+2026-02-03T09:55:01.929425Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\README.md"
+2026-02-03T09:55:01.935262Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]\\loading.tsx"
+2026-02-03T09:55:01.936724Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\globe.svg"
+2026-02-03T09:55:01.940755Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\layout.tsx"
+2026-02-03T09:55:01.949257Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\page.tsx"
+2026-02-03T09:55:01.949430Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]\\page.tsx"
+2026-02-03T09:55:01.950520Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\next.svg"
+2026-02-03T09:55:01.988561Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\globals_debug.txt"
+2026-02-03T09:55:02.139409Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\loading.tsx"
+2026-02-03T09:55:02.150650Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:02.150703Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:02.150714Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:02.152682Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:02.152711Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:02.152718Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:02.152721Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-02-03T09:55:02.173288Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\globals.css"
+2026-02-03T09:55:02.173357Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:02.173389Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:02.173398Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:02.173503Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:02.173513Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:02.173971Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:02.174889Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:02.174927Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:02.179191Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T09:55:02.180088Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T09:55:02.180449Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T09:55:02.180819Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T09:55:02.181230Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T09:55:02.182089Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T09:55:02.182463Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T09:55:02.183078Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T09:55:02.183526Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T09:55:02.183961Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T09:55:02.184692Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T09:55:02.185535Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T09:55:02.186007Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T09:55:02.186641Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T09:55:02.187277Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:02.187482Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:02.188502Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:02.188526Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:02.191802Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T09:55:02.192171Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T09:55:02.192359Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T09:55:02.192589Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T09:55:02.192812Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T09:55:02.193325Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T09:55:02.193530Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T09:55:02.193954Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T09:55:02.194157Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T09:55:02.194281Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T09:55:02.194423Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T09:55:02.194954Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T09:55:02.195124Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T09:55:02.195277Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T09:55:02.195580Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:02.201598Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.036526Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.038889Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T09:55:15.057412Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T09:55:15.057621Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T09:55:15.057790Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T09:55:15.057948Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T09:55:15.058305Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T09:55:15.058475Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T09:55:15.058770Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T09:55:15.058980Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T09:55:15.059210Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T09:55:15.059500Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T09:55:15.059729Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreRowsContainer.tsx"
+2026-02-03T09:55:15.060198Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T09:55:15.060506Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T09:55:15.060777Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T09:55:15.061189Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.061211Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.061221Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.061226Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-02-03T09:55:15.061290Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreRowsContainer.tsx"
+2026-02-03T09:55:15.061305Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.061311Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.061319Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.061328Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.061344Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.061357Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.061756Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.061777Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.066726Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T09:55:15.067089Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T09:55:15.067223Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T09:55:15.067348Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T09:55:15.067471Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T09:55:15.067860Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T09:55:15.068067Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T09:55:15.068496Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T09:55:15.068747Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T09:55:15.068912Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T09:55:15.069082Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T09:55:15.069753Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T09:55:15.070005Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T09:55:15.070248Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T09:55:15.070802Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.070998Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.071368Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.071383Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.243452Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.249312Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T09:55:15.249956Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T09:55:15.250203Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T09:55:15.250497Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T09:55:15.250693Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T09:55:15.251157Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T09:55:15.251353Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T09:55:15.251731Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T09:55:15.252027Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T09:55:15.252324Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T09:55:15.252513Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T09:55:15.252662Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreRowsContainer.tsx"
+2026-02-03T09:55:15.253004Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T09:55:15.253185Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T09:55:15.253355Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T09:55:15.253727Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.253748Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.253755Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.253760Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-02-03T09:55:15.253872Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreRowsContainer.tsx"
+2026-02-03T09:55:15.253886Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.253892Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.253898Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.254061Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.254087Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.254142Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.254673Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.254692Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.257282Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T09:55:15.257825Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T09:55:15.258030Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T09:55:15.258338Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T09:55:15.258654Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T09:55:15.259090Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T09:55:15.259270Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T09:55:15.259621Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T09:55:15.259883Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T09:55:15.260228Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T09:55:15.260550Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T09:55:15.261189Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T09:55:15.261551Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T09:55:15.262822Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T09:55:15.263984Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.265113Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:15.265519Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:15.265544Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:34.268974Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:34.273041Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T09:55:34.273496Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T09:55:34.273770Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T09:55:34.274150Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T09:55:34.274518Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T09:55:34.275245Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T09:55:34.275429Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T09:55:34.275803Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\page.tsx"
+2026-02-03T09:55:34.275943Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T09:55:34.276649Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T09:55:34.276990Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T09:55:34.282698Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T09:55:34.284478Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T09:55:34.285260Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T09:55:34.286268Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T09:55:34.286970Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:34.287004Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:34.287012Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:34.287016Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-02-03T09:55:34.287130Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\page.tsx"
+2026-02-03T09:55:34.287149Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:34.287171Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:34.287182Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:34.287402Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:34.287428Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:34.287492Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:34.287995Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:34.288012Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:34.290474Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T09:55:34.291017Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T09:55:34.291664Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T09:55:34.291949Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T09:55:34.292202Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T09:55:34.292929Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T09:55:34.293159Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T09:55:34.293933Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T09:55:34.294209Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T09:55:34.294456Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T09:55:34.294698Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T09:55:34.296779Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T09:55:34.297167Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T09:55:34.297662Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T09:55:34.298674Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:34.298871Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-02-03T09:55:34.299569Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-02-03T09:55:34.299591Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-02-03T09:56:04.503413Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T09:56:04.505532Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T09:56:04.505803Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T09:56:04.505920Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T09:56:04.506026Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T09:56:04.506257Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T09:56:04.506521Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T09:56:04.506625Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T09:56:04.506794Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\page.tsx"
+2026-02-03T09:56:04.506885Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T09:56:04.507048Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T09:56:04.507189Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T09:56:04.507358Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T09:56:04.507946Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T09:56:04.508217Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T09:56:04.508479Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T09:56:04.508784Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T09:56:04.508798Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-02-03T09:56:04.508805Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T09:56:04.508810Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-02-03T09:56:04.508901Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\page.tsx"
+2026-02-03T09:56:04.508928Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T09:56:04.508936Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-02-03T09:56:04.508942Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T09:56:04.509144Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T09:56:04.509167Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-02-03T09:56:04.509246Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-02-03T09:56:04.509536Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-02-03T09:56:04.509542Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T09:56:04.510837Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T09:56:04.511077Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T09:56:04.511173Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T09:56:04.511275Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T09:56:04.511380Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T09:56:04.511606Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T09:56:04.511704Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T09:56:04.511887Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T09:56:04.512035Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T09:56:04.512173Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T09:56:04.512365Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T09:56:04.512763Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T09:56:04.512943Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T09:56:04.513109Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T09:56:04.513342Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T09:56:04.513452Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-02-03T09:56:04.513626Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-02-03T09:56:04.513635Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:48.942845Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-02-03T10:05:48.942930Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "F:\\My work\\Movie_Discovery\\tmdb-movie-app", pattern: "**/*", negated: false }
+2026-02-03T10:05:48.943428Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-02-03T10:05:48.943455Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "F:\\My work\\Movie_Discovery\\tmdb-movie-app" }
+2026-02-03T10:05:48.944692Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:48.949816Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\eslint.config.mjs"
+2026-02-03T10:05:48.949956Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\globals_debug.txt"
+2026-02-03T10:05:48.950049Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\next.config.ts"
+2026-02-03T10:05:48.950428Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\package.json"
+2026-02-03T10:05:48.950514Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\postcss.config.mjs"
+2026-02-03T10:05:48.950626Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:05:48.950872Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\file.svg"
+2026-02-03T10:05:48.950958Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\globe.svg"
+2026-02-03T10:05:48.951044Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\next.svg"
+2026-02-03T10:05:48.951138Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\vercel.svg"
+2026-02-03T10:05:48.951219Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\window.svg"
+2026-02-03T10:05:48.951404Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\README.md"
+2026-02-03T10:05:48.951528Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:05:48.951706Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:05:48.952001Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:05:48.952196Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:05:48.952426Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]\\loading.tsx"
+2026-02-03T10:05:48.952496Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]\\page.tsx"
+2026-02-03T10:05:48.952590Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\globals.css"
+2026-02-03T10:05:48.952653Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\layout.tsx"
+2026-02-03T10:05:48.952709Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\loading.tsx"
+2026-02-03T10:05:48.952804Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:05:48.952968Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:05:48.953105Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]\\loading.tsx"
+2026-02-03T10:05:48.953169Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]\\page.tsx"
+2026-02-03T10:05:48.953269Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\page.tsx"
+2026-02-03T10:05:48.953365Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:05:48.953491Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed\\page.tsx"
+2026-02-03T10:05:48.953606Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:05:48.953737Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search\\page.tsx"
+2026-02-03T10:05:48.953848Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:05:48.953953Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later\\page.tsx"
+2026-02-03T10:05:48.954061Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:05:48.954156Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreList.tsx"
+2026-02-03T10:05:48.954205Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreRowsContainer.tsx"
+2026-02-03T10:05:48.954315Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreSection.tsx"
+2026-02-03T10:05:48.954394Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\LoadingSkeleton.tsx"
+2026-02-03T10:05:48.954511Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\MovieCard.tsx"
+2026-02-03T10:05:48.954592Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\MovieGrid.tsx"
+2026-02-03T10:05:48.954740Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Navbar.tsx"
+2026-02-03T10:05:48.954834Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Pagination.tsx"
+2026-02-03T10:05:48.954915Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\RecentlyViewedHandler.tsx"
+2026-02-03T10:05:48.954974Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\SortSelector.tsx"
+2026-02-03T10:05:48.955033Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\WatchLaterButton.tsx"
+2026-02-03T10:05:48.955158Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:05:48.955291Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib\\helpers.ts"
+2026-02-03T10:05:48.955354Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib\\tmdb.ts"
+2026-02-03T10:05:48.955469Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:05:48.955604Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store\\recentlyViewedStore.ts"
+2026-02-03T10:05:48.955671Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store\\watchLaterStore.ts"
+2026-02-03T10:05:48.955803Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:05:48.955931Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types\\movie.ts"
+2026-02-03T10:05:48.956102Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\tsconfig.json"
+2026-02-03T10:05:48.956223Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:48.956235Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:48.956243Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:48.956249Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 38 file(s)
+2026-02-03T10:05:48.956736Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreSection.tsx"
+2026-02-03T10:05:48.956747Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\MovieCard.tsx"
+2026-02-03T10:05:48.956763Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\eslint.config.mjs"
+2026-02-03T10:05:48.956763Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\postcss.config.mjs"
+2026-02-03T10:05:48.956869Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\file.svg"
+2026-02-03T10:05:48.956867Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\window.svg"
+2026-02-03T10:05:48.966794Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\MovieGrid.tsx"
+2026-02-03T10:05:48.967040Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Navbar.tsx"
+2026-02-03T10:05:48.967196Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreList.tsx"
+2026-02-03T10:05:48.967194Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Pagination.tsx"
+2026-02-03T10:05:48.967271Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreRowsContainer.tsx"
+2026-02-03T10:05:48.967394Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\RecentlyViewedHandler.tsx"
+2026-02-03T10:05:48.968991Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\LoadingSkeleton.tsx"
+2026-02-03T10:05:48.971865Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later\\page.tsx"
+2026-02-03T10:05:48.972141Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\SortSelector.tsx"
+2026-02-03T10:05:48.973916Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\WatchLaterButton.tsx"
+2026-02-03T10:05:48.974095Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib\\helpers.ts"
+2026-02-03T10:05:48.974503Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store\\watchLaterStore.ts"
+2026-02-03T10:05:48.975147Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types\\movie.ts"
+2026-02-03T10:05:48.978104Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\README.md"
+2026-02-03T10:05:48.978326Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]\\loading.tsx"
+2026-02-03T10:05:48.983957Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\globe.svg"
+2026-02-03T10:05:48.990221Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\loading.tsx"
+2026-02-03T10:05:48.990568Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]\\loading.tsx"
+2026-02-03T10:05:48.994333Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib\\tmdb.ts"
+2026-02-03T10:05:48.998502Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\globals_debug.txt"
+2026-02-03T10:05:49.003426Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search\\page.tsx"
+2026-02-03T10:05:49.003783Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\vercel.svg"
+2026-02-03T10:05:49.003949Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\package.json"
+2026-02-03T10:05:49.004108Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\page.tsx"
+2026-02-03T10:05:49.015480Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\tsconfig.json"
+2026-02-03T10:05:49.015509Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\next.config.ts"
+2026-02-03T10:05:49.017481Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store\\recentlyViewedStore.ts"
+2026-02-03T10:05:49.017776Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\layout.tsx"
+2026-02-03T10:05:49.018209Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]\\page.tsx"
+2026-02-03T10:05:49.018660Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed\\page.tsx"
+2026-02-03T10:05:49.032373Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\next.svg"
+2026-02-03T10:05:49.041869Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]\\page.tsx"
+2026-02-03T10:05:49.042068Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.042097Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.042114Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.044321Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.044376Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.044388Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.044395Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-02-03T10:05:49.044617Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\globals.css"
+2026-02-03T10:05:49.044637Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.044647Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.044655Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.044835Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.044861Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.045450Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.047013Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.047049Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.050962Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:05:49.051539Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:05:49.051773Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:05:49.052033Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:05:49.052288Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:05:49.052818Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:05:49.053033Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:05:49.053431Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:05:49.053716Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:05:49.054003Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:05:49.054306Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:05:49.055084Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:05:49.055418Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:05:49.055734Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:05:49.056116Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.056232Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.056468Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.056581Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.059503Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:05:49.060213Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:05:49.060443Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:05:49.060717Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:05:49.060958Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:05:49.061634Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:05:49.061847Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:05:49.062287Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:05:49.062653Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:05:49.062977Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:05:49.063311Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:05:49.064096Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:05:49.064415Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:05:49.064723Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:05:49.065115Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.070925Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.492431Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.496245Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:05:49.496865Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:05:49.497102Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:05:49.497343Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:05:49.497590Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:05:49.498151Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:05:49.498379Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:05:49.498859Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:05:49.499183Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:05:49.499524Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:05:49.499859Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:05:49.500607Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:05:49.500924Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:05:49.501234Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:05:49.501620Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.501636Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.501644Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.501650Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 0 file(s)
+2026-02-03T10:05:49.501658Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.501666Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.501673Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.501681Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.501687Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.501699Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.502214Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.502225Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.504756Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:05:49.505226Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:05:49.505414Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:05:49.505637Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:05:49.505832Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:05:49.506264Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:05:49.506442Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:05:49.506776Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:05:49.507016Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:05:49.507263Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:05:49.507532Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:05:49.508246Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:05:49.508530Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:05:49.508690Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:05:49.508851Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.508970Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:05:49.509275Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-02-03T10:05:49.509291Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-02-03T10:06:20.273130Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:06:20.275775Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:06:20.276267Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:06:20.276457Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:06:20.276681Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:06:20.276889Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:06:20.277263Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:06:20.277409Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:06:20.277730Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:06:20.277941Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:06:20.278150Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:06:20.278489Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:06:20.278715Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Navbar.tsx"
+2026-02-03T10:06:20.278913Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:06:20.279072Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:06:20.279213Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:06:20.279467Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:06:20.279480Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-02-03T10:06:20.279486Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:06:20.279490Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-02-03T10:06:20.279596Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Navbar.tsx"
+2026-02-03T10:06:20.279610Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:06:20.279615Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-02-03T10:06:20.279620Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T10:06:20.280058Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T10:06:20.280078Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-02-03T10:06:20.280230Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-02-03T10:06:20.280777Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:06:20.280801Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:06:20.283395Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:06:20.283825Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:06:20.283978Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:06:20.284092Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:06:20.284204Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:06:20.284454Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:06:20.284596Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:06:20.284817Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:06:20.284945Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:06:20.285083Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:06:20.285225Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:06:20.285660Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:06:20.285957Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:06:20.286204Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:06:20.286807Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:06:20.287303Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:06:20.287563Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-02-03T10:06:20.287580Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:03.121855Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:03.124159Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:07:03.124709Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:07:03.124954Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:07:03.125186Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:07:03.125406Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:07:03.125887Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:07:03.126090Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:07:03.126386Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\page.tsx"
+2026-02-03T10:07:03.126522Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:07:03.126850Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:07:03.127061Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:07:03.127343Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:07:03.128248Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:07:03.128899Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:07:03.129442Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:07:03.129849Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:03.129873Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:03.129885Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:03.129894Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-02-03T10:07:03.130039Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\page.tsx"
+2026-02-03T10:07:03.130061Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:03.130071Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:03.130080Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:03.130301Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:03.130325Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:03.130555Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:03.131281Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:03.131307Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:03.135589Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:07:03.136520Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:07:03.136983Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:07:03.137428Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:07:03.137965Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:07:03.138771Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:07:03.138994Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:07:03.139443Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:07:03.139953Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:07:03.140346Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:07:03.140909Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:07:03.141911Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:07:03.142191Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:07:03.142475Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:07:03.142845Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:03.142995Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:03.143140Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:03.143149Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:42.913803Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:42.916848Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:07:42.917382Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:07:42.917694Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:07:42.917974Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:07:42.918207Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:07:42.918713Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:07:42.918896Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:07:42.919179Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:07:42.919407Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:07:42.919741Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:07:42.920202Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:07:42.920676Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Navbar.tsx"
+2026-02-03T10:07:42.920960Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:07:42.921236Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:07:42.921497Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:07:42.922063Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:42.922086Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:42.922094Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:42.922099Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-02-03T10:07:42.922227Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Navbar.tsx"
+2026-02-03T10:07:42.922247Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:42.922254Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:42.922260Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:42.922464Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:42.922491Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:42.922549Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:42.923467Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:42.923494Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:42.930104Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:07:42.931455Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:07:42.931742Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:07:42.932022Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:07:42.934144Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:07:42.934945Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:07:42.936138Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:07:42.936861Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:07:42.937606Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:07:42.937997Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:07:42.938528Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:07:42.939845Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:07:42.940264Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:07:42.940652Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:07:42.941299Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:42.941616Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:07:42.941864Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-02-03T10:07:42.942333Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-02-03T10:08:25.465589Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-02-03T10:08:25.465634Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "F:\\My work\\Movie_Discovery\\tmdb-movie-app", pattern: "**/*", negated: false }
+2026-02-03T10:08:25.465843Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-02-03T10:08:25.465853Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "F:\\My work\\Movie_Discovery\\tmdb-movie-app" }
+2026-02-03T10:08:25.466265Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:08:25.469309Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\eslint.config.mjs"
+2026-02-03T10:08:25.469484Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\globals_debug.txt"
+2026-02-03T10:08:25.469623Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\next.config.ts"
+2026-02-03T10:08:25.470059Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\package.json"
+2026-02-03T10:08:25.470194Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\postcss.config.mjs"
+2026-02-03T10:08:25.470393Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:08:25.470675Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\file.svg"
+2026-02-03T10:08:25.470811Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\globe.svg"
+2026-02-03T10:08:25.470937Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\next.svg"
+2026-02-03T10:08:25.471062Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\vercel.svg"
+2026-02-03T10:08:25.471196Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\window.svg"
+2026-02-03T10:08:25.471399Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\README.md"
+2026-02-03T10:08:25.471595Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:08:25.471831Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:08:25.472016Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:08:25.472188Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:08:25.472341Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]\\loading.tsx"
+2026-02-03T10:08:25.472412Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]\\page.tsx"
+2026-02-03T10:08:25.472515Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\globals.css"
+2026-02-03T10:08:25.472577Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\layout.tsx"
+2026-02-03T10:08:25.472634Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\loading.tsx"
+2026-02-03T10:08:25.472717Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:08:25.472858Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:08:25.472979Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]\\loading.tsx"
+2026-02-03T10:08:25.473040Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]\\page.tsx"
+2026-02-03T10:08:25.473137Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\page.tsx"
+2026-02-03T10:08:25.473235Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:08:25.473377Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed\\page.tsx"
+2026-02-03T10:08:25.473493Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:08:25.473628Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search\\page.tsx"
+2026-02-03T10:08:25.473749Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:08:25.473900Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later\\page.tsx"
+2026-02-03T10:08:25.474053Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:08:25.474209Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreList.tsx"
+2026-02-03T10:08:25.474277Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreRowsContainer.tsx"
+2026-02-03T10:08:25.474345Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreSection.tsx"
+2026-02-03T10:08:25.474412Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\LoadingSkeleton.tsx"
+2026-02-03T10:08:25.474479Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\MovieCard.tsx"
+2026-02-03T10:08:25.474545Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\MovieGrid.tsx"
+2026-02-03T10:08:25.474627Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Navbar.tsx"
+2026-02-03T10:08:25.474698Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Pagination.tsx"
+2026-02-03T10:08:25.474768Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\RecentlyViewedHandler.tsx"
+2026-02-03T10:08:25.474851Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\SortSelector.tsx"
+2026-02-03T10:08:25.474919Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\WatchLaterButton.tsx"
+2026-02-03T10:08:25.475047Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:08:25.475176Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib\\helpers.ts"
+2026-02-03T10:08:25.475240Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib\\tmdb.ts"
+2026-02-03T10:08:25.475380Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:08:25.475531Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store\\recentlyViewedStore.ts"
+2026-02-03T10:08:25.475602Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store\\watchLaterStore.ts"
+2026-02-03T10:08:25.475723Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:08:25.475859Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types\\movie.ts"
+2026-02-03T10:08:25.476025Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\tsconfig.json"
+2026-02-03T10:08:25.476158Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:08:25.476172Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-02-03T10:08:25.476180Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:08:25.476186Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 38 file(s)
+2026-02-03T10:08:25.476389Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\next.config.ts"
+2026-02-03T10:08:25.476390Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\eslint.config.mjs"
+2026-02-03T10:08:25.476389Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\window.svg"
+2026-02-03T10:08:25.476390Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search\\page.tsx"
+2026-02-03T10:08:25.476390Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Pagination.tsx"
+2026-02-03T10:08:25.476390Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\postcss.config.mjs"
+2026-02-03T10:08:25.476467Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\globals_debug.txt"
+2026-02-03T10:08:25.476479Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreSection.tsx"
+2026-02-03T10:08:25.476477Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\package.json"
+2026-02-03T10:08:25.476500Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreList.tsx"
+2026-02-03T10:08:25.476522Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\README.md"
+2026-02-03T10:08:25.476530Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\RecentlyViewedHandler.tsx"
+2026-02-03T10:08:25.476530Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later\\page.tsx"
+2026-02-03T10:08:25.476552Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\file.svg"
+2026-02-03T10:08:25.476561Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\LoadingSkeleton.tsx"
+2026-02-03T10:08:25.476579Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\loading.tsx"
+2026-02-03T10:08:25.476603Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\SortSelector.tsx"
+2026-02-03T10:08:25.476607Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]\\page.tsx"
+2026-02-03T10:08:25.476610Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]\\loading.tsx"
+2026-02-03T10:08:25.476616Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\GenreRowsContainer.tsx"
+2026-02-03T10:08:25.476626Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\MovieCard.tsx"
+2026-02-03T10:08:25.476624Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\globe.svg"
+2026-02-03T10:08:25.476637Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib\\tmdb.ts"
+2026-02-03T10:08:25.476648Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]\\loading.tsx"
+2026-02-03T10:08:25.476671Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\WatchLaterButton.tsx"
+2026-02-03T10:08:25.476678Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\layout.tsx"
+2026-02-03T10:08:25.476684Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\MovieGrid.tsx"
+2026-02-03T10:08:25.476704Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]\\page.tsx"
+2026-02-03T10:08:25.476712Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store\\recentlyViewedStore.ts"
+2026-02-03T10:08:25.476722Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib\\helpers.ts"
+2026-02-03T10:08:25.476733Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\page.tsx"
+2026-02-03T10:08:25.476738Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components\\Navbar.tsx"
+2026-02-03T10:08:25.476747Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store\\watchLaterStore.ts"
+2026-02-03T10:08:25.476745Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\next.svg"
+2026-02-03T10:08:25.476759Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public\\vercel.svg"
+2026-02-03T10:08:25.476784Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed\\page.tsx"
+2026-02-03T10:08:25.476792Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\tsconfig.json"
+2026-02-03T10:08:25.476793Z  INFO tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types\\movie.ts"
+2026-02-03T10:08:25.477297Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:08:25.477325Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-02-03T10:08:25.477331Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T10:08:25.478673Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T10:08:25.478720Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-02-03T10:08:25.478734Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:08:25.478741Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-02-03T10:08:25.478903Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\globals.css"
+2026-02-03T10:08:25.478920Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:08:25.478929Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2026-02-03T10:08:25.478937Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2026-02-03T10:08:25.479105Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2026-02-03T10:08:25.479129Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2026-02-03T10:08:25.479498Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-02-03T10:08:25.480327Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-02-03T10:08:25.480347Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:08:25.483173Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:08:25.483466Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:08:25.483584Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:08:25.483708Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:08:25.483816Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:08:25.484066Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:08:25.484197Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:08:25.484405Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:08:25.484626Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:08:25.484794Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:08:25.484957Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:08:25.485345Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:08:25.485524Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:08:25.485717Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:08:25.485939Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:08:25.486027Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-02-03T10:08:25.486222Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-02-03T10:08:25.486231Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: enter
+2026-02-03T10:08:25.489324Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\public"
+2026-02-03T10:08:25.489813Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src"
+2026-02-03T10:08:25.490006Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app"
+2026-02-03T10:08:25.490214Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre"
+2026-02-03T10:08:25.490409Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\genre\\[id]"
+2026-02-03T10:08:25.490980Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie"
+2026-02-03T10:08:25.491247Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\movie\\[id]"
+2026-02-03T10:08:25.491692Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\recently-viewed"
+2026-02-03T10:08:25.491968Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\search"
+2026-02-03T10:08:25.492200Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\app\\watch-later"
+2026-02-03T10:08:25.492450Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\components"
+2026-02-03T10:08:25.493185Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\lib"
+2026-02-03T10:08:25.493515Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\store"
+2026-02-03T10:08:25.493790Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "F:\\My work\\Movie_Discovery\\tmdb-movie-app\\src\\types"
+2026-02-03T10:08:25.494450Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: exit
+2026-02-03T10:08:25.498423Z  INFO get_globs: tailwindcss_oxide::scanner: exit

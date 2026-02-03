@@ -12,10 +12,10 @@ export default function WatchLaterButton({ movie }: { movie: Movie }) {
     <button
       onClick={() => toggleWatchLater(movie)}
       className={clsx(
-        "flex items-center gap-2 px-8 py-3 rounded-full font-bold transition-all active:scale-95",
+        "flex items-center gap-2 px-8 py-4 rounded-full font-bold transition-all active:scale-95 border",
         isFavorite
-          ? "bg-primary text-white shadow-[0_0_20px_rgba(139,92,246,0.3)]"
-          : "bg-white/10 hover:bg-white/20 text-white border border-white/10"
+          ? "bg-white text-black border-white shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+          : "bg-white/5 hover:bg-white/10 text-white border-white/10 backdrop-blur-md"
       )}
     >
       <svg

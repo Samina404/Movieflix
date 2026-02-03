@@ -8,6 +8,7 @@ export interface Movie {
   vote_average: number;
   vote_count: number;
   genre_ids: number[];
+  popularity: number;
   runtime?: number;
   genres?: { id: number; name: string }[];
 }
@@ -24,11 +25,22 @@ export interface Cast {
   profile_path: string | null;
 }
 
+export interface Video {
+  id: string;
+  key: string;
+  name: string;
+  site: string;
+  type: string;
+}
+
 export interface MovieDetails extends Movie {
   runtime: number;
   genres: Genre[];
   credits: {
     cast: Cast[];
+  };
+  videos: {
+    results: Video[];
   };
 }
 

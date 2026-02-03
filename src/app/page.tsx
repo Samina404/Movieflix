@@ -1,77 +1,91 @@
-import { getTopRatedMovies, getGenres } from "@/lib/tmdb";
+import { getTopRatedMovies, getGenres, getNewMovies } from "@/lib/tmdb";
 import MovieGrid from "@/components/MovieGrid";
 import Link from "next/link";
 import { Suspense } from "react";
-import LoadingSkeleton from "@/components/LoadingSkeleton";
 import GenreRowsContainer from "@/components/GenreRowsContainer";
+import GenreBar from "@/components/GenreBar";
 
 export default async function HomePage() {
-  const [topRatedData, genresData] = await Promise.all([
+  const [topRatedData, genresData, newMoviesData] = await Promise.all([
     getTopRatedMovies(),
     getGenres(),
+    getNewMovies(),
   ]);
 
   const heroMovie = topRatedData.results[0];
   const genres = genresData.genres;
+  
+  // Sort new movies by release date descending
+  const recentMovies = [...newMoviesData.results].sort((a, b) => 
+    new Date(b.release_date).getTime() - new Date(a.release_date).getTime()
+  );
 
   return (
     <div className="space-y-12 pb-10">
       {/* Hero Section */}
       {heroMovie && (
-        <section className="relative h-[60vh] min-h-[400px] w-full rounded-3xl overflow-hidden group">
+        <section className="relative w-full aspect-[21/7] min-h-[300px] max-h-[400px] rounded-[48px] overflow-hidden group">
           <img
             src={`https://image.tmdb.org/t/p/original${heroMovie.backdrop_path}`}
             alt={heroMovie.title}
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-          <div className="absolute bottom-0 left-0 p-8 md:p-12 space-y-4 max-w-2xl">
-            <span className="px-3 py-1 bg-primary/20 border border-primary/30 rounded-full text-primary text-xs font-bold uppercase tracking-wider">
-              Featured Top Rated
-            </span>
-            <h1 className="text-4xl md:text-6xl font-black tracking-tighter leading-none">
-              {heroMovie.title}
-            </h1>
-            <p className="text-white/70 line-clamp-3 md:line-clamp-none text-sm md:text-base">
-              {heroMovie.overview}
-            </p>
-            <div className="flex gap-4 pt-4">
-              <Link
-                href={`/movie/${heroMovie.id}`}
-                className="px-8 py-3 bg-white text-black font-bold rounded-full hover:bg-white/90 transition-colors"
-              >
-                View Details
-              </Link>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent" />
+          
+          {/* Content */}
+          <div className="absolute inset-0 p-8 flex items-end justify-between">
+            <div className="space-y-3 max-w-3xl">
+              <span className="text-white/80 text-base font-medium tracking-wide">
+                {heroMovie.release_date?.split("-")[0]}
+              </span>
+              <h1 className="text-3xl md:text-5xl font-medium tracking-tight text-white leading-tight">
+                {heroMovie.title}
+              </h1>
+              
+              <div className="flex items-center gap-6 text-xs font-medium text-white/70">
+                 <div className="flex items-center gap-2">
+                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    <span>{heroMovie.vote_count}</span>
+                 </div>
+                 <div className="flex items-center gap-2">
+                    <svg className="w-3 h-3 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <span>{heroMovie.vote_average.toFixed(1)} iMDB</span>
+                 </div>
+                 <div className="flex items-center gap-2">
+                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                    <span>18</span>
+                 </div>
+              </div>
+            </div>
+
+            {/* Play Button */}
+            <div className="hidden md:block">
+               <Link href={`/movie/${heroMovie.id}`} className="flex items-center justify-center w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all group-play">
+                  <svg className="w-8 h-8 text-white fill-white ml-1" viewBox="0 0 24 24">
+                     <path d="M8 5v14l11-7z" />
+                  </svg>
+               </Link>
             </div>
           </div>
         </section>
       )}
 
-      {/* Genres List */}
-      <section className="space-y-4">
-        <h2 className="text-xl font-bold tracking-tight">Browse by Genre</h2>
-        <div className="flex flex-wrap gap-3">
-          {genres.map((genre) => (
-            <Link
-              key={genre.id}
-              href={`/genre/${genre.id}`}
-              className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-medium hover:bg-primary transition-all hover:border-primary"
-            >
-              {genre.name}
-            </Link>
-          ))}
-        </div>
-      </section>
+      {/* Genre Filter Bar */}
+      <GenreBar genres={genres} />
 
-      {/* Top Rated Section */}
+      {/* Recent Releases Section */}
       <section className="space-y-6">
         <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-bold tracking-tight">Top Rated Movies</h2>
-          <Link href="/genre/top-rated" className="text-sm font-medium text-primary hover:underline">
-            See more
-          </Link>
+          <h2 className="text-xl font-bold tracking-wide text-white/90">Recent Releases</h2>
         </div>
-        <MovieGrid movies={topRatedData.results.slice(0, 12)} />
+        <MovieGrid movies={recentMovies.slice(0, 16)} />
       </section>
 
       {/* Popular Movies by Genre (Display first 5 genres) */}

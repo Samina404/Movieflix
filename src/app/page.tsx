@@ -1,9 +1,9 @@
 import { getTopRatedMovies, getGenres } from "@/lib/tmdb";
 import MovieGrid from "@/components/MovieGrid";
-import GenreSection from "@/components/GenreSection";
 import Link from "next/link";
 import { Suspense } from "react";
 import LoadingSkeleton from "@/components/LoadingSkeleton";
+import GenreRowsContainer from "@/components/GenreRowsContainer";
 
 export default async function HomePage() {
   const [topRatedData, genresData] = await Promise.all([
@@ -75,13 +75,17 @@ export default async function HomePage() {
       </section>
 
       {/* Popular Movies by Genre (Display first 5 genres) */}
-      <div className="space-y-12">
-        {genres.slice(0, 5).map((genre) => (
-          <Suspense key={genre.id} fallback={<div className="h-64 animate-pulse bg-white/5 rounded-2xl" />}>
-            <GenreSection genreId={genre.id} genreName={genre.name} />
-          </Suspense>
-        ))}
-      </div>
+      <Suspense
+        fallback={
+          <div className="space-y-12">
+            {[...Array(5)].map((_, i) => (
+              <div key={i} className="h-64 animate-pulse bg-white/5 rounded-2xl" />
+            ))}
+          </div>
+        }
+      >
+        <GenreRowsContainer genres={genres.slice(0, 5)} />
+      </Suspense>
     </div>
   );
 }

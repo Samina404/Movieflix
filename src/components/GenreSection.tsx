@@ -1,15 +1,14 @@
-import { getPopularMoviesByGenre } from "@/lib/tmdb";
+import { Movie } from "@/types/movie";
 import MovieCard from "./MovieCard";
 import Link from "next/link";
 
 interface GenreSectionProps {
   genreId: number;
   genreName: string;
+  movies: Movie[];
 }
 
-export default async function GenreSection({ genreId, genreName }: GenreSectionProps) {
-  const movies = await getPopularMoviesByGenre(genreId);
-
+export default function GenreSection({ genreId, genreName, movies }: GenreSectionProps) {
   if (movies.length === 0) return null;
 
   return (

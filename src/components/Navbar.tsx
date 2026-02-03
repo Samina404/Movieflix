@@ -5,101 +5,118 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { clsx } from "clsx";
+import { Search, Home, Clapperboard, Bookmark, Clock, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
       router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+      setIsMobileMenuOpen(false);
     }
   };
 
   const navLinks = [
-    { 
-      name: "Home", 
-      href: "/", 
-      icon: (
-        <svg className="w-5 h-5 mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-        </svg>
-      )
-    },
-    { 
-      name: "Watch Later", 
-      href: "/watch-later",
-      icon: (
-        <svg className="w-5 h-5 mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-        </svg>
-      )
-    },
-    { 
-      name: "Recent", 
-      href: "/recently-viewed",
-      icon: (
-        <svg className="w-5 h-5 mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      )
-    },
+    { name: "Home", href: "/", icon: <Home size={18} /> },
+    { name: "Movies", href: "/movies", icon: <Clapperboard size={18} /> },
+    { name: "Watch Later", href: "/watch-later", icon: <Bookmark size={18} /> },
+    { name: "Recent", href: "/recently-viewed", icon: <Clock size={18} /> },
   ];
 
   return (
-    <nav className="sticky top-0 z-50 glass-morphism border-b border-white/10 px-4 py-3">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-bold gradient-text tracking-tighter">MOVIEFLIX</span>
-        </Link>
-
-        <div className="flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={clsx(
-                "flex flex-col items-center justify-center text-[10px] font-medium transition-colors uppercase tracking-widest hover:text-primary",
-                pathname === link.href ? "text-primary" : "text-white/60"
-              )}
-            >
-              {link.icon}
-              {link.name}
-            </Link>
-          ))}
-          <Link href="/movies" className={clsx("flex flex-col items-center justify-center text-[10px] font-medium transition-colors uppercase tracking-widest hover:text-primary", pathname === "/movies" ? "text-primary" : "text-white/60")}>
-            <svg className="w-5 h-5 mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
-            </svg>
-            Movies
+    <nav className="sticky top-0 z-50 glass-morphism py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-8 h-10">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2 group">
+            <div className="w-10 h-10 bg-primary/20 rounded-xl flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+              <Clapperboard className="text-primary" size={24} />
+            </div>
+            <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent">
+              MOVIEFLIX
+            </span>
           </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={clsx(
+                  "flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all",
+                  pathname === link.href
+                    ? "bg-primary/10 text-primary"
+                    : "text-white/60 hover:text-white hover:bg-white/5"
+                )}
+              >
+                {link.icon}
+                {link.name}
+              </Link>
+            ))}
+          </div>
+
+          {/* Search Bar */}
+          <div className="hidden md:block flex-1 max-w-sm">
+            <form onSubmit={handleSearch} className="relative">
+              <input
+                type="text"
+                placeholder="Search movies..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full bg-white/5 border border-white/10 rounded-xl py-2 px-4 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all placeholder:text-white/30"
+              />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30" size={16} />
+            </form>
+          </div>
+
+          {/* Mobile Menu Toggle */}
+          <button 
+            className="md:hidden p-2 text-white/60 hover:text-white"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
-        <form onSubmit={handleSearch} className="relative w-full md:w-64">
-          <input
-            type="text"
-            placeholder="Search movies..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-white/5 border border-white/10 rounded-full py-2 px-5 pl-10 text-sm focus:outline-none focus:ring-1 focus:ring-primary/50 transition-all placeholder:text-zinc-600"
-          />
-          <svg
-            className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-        </form>
+        {/* Mobile Navigation */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 pt-4 border-t border-white/10 space-y-2 animate-in fade-in slide-in-from-top-4 duration-300">
+            <form onSubmit={handleSearch} className="relative mb-4">
+              <input
+                type="text"
+                placeholder="Search movies..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full bg-white/5 border border-white/10 rounded-xl py-3 px-4 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all"
+              />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30" size={16} />
+            </form>
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={clsx(
+                  "flex items-center gap-3 px-4 py-3 rounded-xl text-base font-medium transition-all",
+                  pathname === link.href
+                    ? "bg-primary/10 text-primary"
+                    : "text-white/60 hover:text-white hover:bg-white/5"
+                )}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.icon}
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </nav>
   );
 }
+

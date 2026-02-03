@@ -22,10 +22,10 @@ export default async function GenreRowsContainer({ genres }: { genres: Genre[] }
       return true;
     });
     
-    // Take top 8
+    // Take top 5
     return {
       ...genre,
-      displayMovies: uniqueMovies.slice(0, 8)
+      displayMovies: uniqueMovies.slice(0, 5)
     };
   });
 

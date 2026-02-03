@@ -1,8 +1,9 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import { Genre } from "@/types/movie";
+import { ChevronLeft, ChevronRight, Zap } from "lucide-react";
 
 interface GenreBarProps {
   genres: Genre[];
@@ -10,48 +11,69 @@ interface GenreBarProps {
 
 export default function GenreBar({ genres }: GenreBarProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(true);
+
+  const checkScroll = () => {
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+      setShowLeftArrow(scrollLeft > 0);
+      setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 5);
+    }
+  };
+
+  useEffect(() => {
+    checkScroll();
+    window.addEventListener("resize", checkScroll);
+    return () => window.removeEventListener("resize", checkScroll);
+  }, []);
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const { current } = scrollRef;
-      const scrollAmount = 300;
-      if (direction === "left") {
-        current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-      } else {
-        current.scrollBy({ left: scrollAmount, behavior: "smooth" });
-      }
+      const scrollAmount = 400;
+      current.scrollBy({ 
+        left: direction === "left" ? -scrollAmount : scrollAmount, 
+        behavior: "smooth" 
+      });
     }
   };
 
   return (
-    <div className="relative group">
+    <div className="relative group/bar py-4">
       {/* Left Arrow */}
-      <button
-        onClick={() => scroll("left")}
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center bg-[#1A1A1A]/90 backdrop-blur-sm border border-white/10 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity disabled:opacity-0"
-      >
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
+      {showLeftArrow && (
+        <button
+          onClick={() => scroll("left")}
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-[#0f172a]/80 backdrop-blur-xl border border-white/10 rounded-2xl text-white shadow-2xl hover:bg-primary hover:text-white transition-all duration-300 -ml-6 md:-ml-4 group-hover/bar:scale-110"
+        >
+          <ChevronLeft size={24} />
+        </button>
+      )}
+
+      {/* Gradient Fades */}
+      <div className={`absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#020617] to-transparent z-10 pointer-events-none transition-opacity duration-300 ${showLeftArrow ? "opacity-100" : "opacity-0"}`} />
+      <div className={`absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#020617] to-transparent z-10 pointer-events-none transition-opacity duration-300 ${showRightArrow ? "opacity-100" : "opacity-0"}`} />
 
       {/* Scrollable Container */}
       <div
         ref={scrollRef}
+        onScroll={checkScroll}
         className="flex items-center gap-3 overflow-x-auto scrollbar-hide py-2 px-1 scroll-smooth"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         <Link
           href="/genre/trending"
-          className="flex-shrink-0 px-6 py-2.5 bg-[#2A2A2A] border border-white/10 rounded-full text-sm font-medium text-white hover:bg-white hover:text-black transition-all"
+          className="flex-shrink-0 flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-2xl text-sm font-bold shadow-lg shadow-primary/25 hover:scale-105 transition-all"
         >
+          <Zap size={16} fill="white" />
           Trending
         </Link>
         {genres.map((genre) => (
           <Link
             key={genre.id}
             href={`/genre/${genre.id}`}
-            className="flex-shrink-0 px-6 py-2.5 bg-[#1A1A1A] border border-white/10 rounded-full text-sm font-medium text-white hover:bg-white hover:text-black transition-all whitespace-nowrap"
+            className="flex-shrink-0 px-6 py-3 bg-white/5 border border-white/5 rounded-2xl text-sm font-bold text-white/70 hover:bg-white hover:text-[#020617] hover:scale-105 transition-all whitespace-nowrap"
           >
             {genre.name}
           </Link>
@@ -59,14 +81,15 @@ export default function GenreBar({ genres }: GenreBarProps) {
       </div>
 
       {/* Right Arrow */}
-      <button
-        onClick={() => scroll("right")}
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center bg-[#1A1A1A]/90 backdrop-blur-sm border border-white/10 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity"
-      >
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
+      {showRightArrow && (
+        <button
+          onClick={() => scroll("right")}
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-[#0f172a]/80 backdrop-blur-xl border border-white/10 rounded-2xl text-white shadow-2xl hover:bg-primary hover:text-white transition-all duration-300 -mr-6 md:-mr-4 group-hover/bar:scale-110"
+        >
+          <ChevronRight size={24} />
+        </button>
+      )}
     </div>
   );
 }
+

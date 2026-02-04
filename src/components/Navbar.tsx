@@ -7,6 +7,7 @@ import { clsx } from "clsx";
 import { Search, Home, Clapperboard, Bookmark, Clock, Menu, X } from "lucide-react";
 
 import { useUIStore } from "@/store/uiStore";
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -37,13 +38,13 @@ export default function Navbar() {
             <div className="w-10 h-10 bg-primary/20 rounded-xl flex items-center justify-center group-hover:bg-primary/30 transition-colors">
               <Clapperboard className="text-primary" size={24} />
             </div>
-            <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent transition-all group-hover:text-primary">
+            <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-foreground to-foreground-muted bg-clip-text text-transparent transition-all group-hover:text-primary">
               MOVIEFLIX
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -52,7 +53,7 @@ export default function Navbar() {
                   "flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-all group/nav",
                   pathname === link.href
                     ? "bg-primary/10 text-primary"
-                    : "text-white/60 hover:text-primary hover:bg-white/5"
+                    : "text-foreground-muted hover:text-primary hover:bg-foreground/5"
                 )}
               >
                 <div className="p-1.5 rounded-lg border border-transparent transition-all group-hover/nav:border-primary/20 group-hover/nav:bg-primary/5">
@@ -63,41 +64,45 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Search Bar */}
-          <div className="hidden md:block flex-1 max-w-sm">
-            <form onSubmit={handleSearch} className="relative group/search">
+          {/* Search bar and Theme Toggle Container */}
+          <div className="hidden md:flex items-center gap-4 flex-1 max-w-sm">
+            <form onSubmit={handleSearch} className="relative group/search flex-1">
               <input
                 type="text"
                 placeholder="Search movies..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-white/5 border border-primary/10 rounded-xl py-2 px-4 pl-10 text-sm focus:outline-none focus:ring-4 focus:ring-primary/10 focus:border-primary/50 hover:border-primary/30 transition-all text-white/30 placeholder:text-white/30 focus:text-white"
+                className="w-full bg-foreground/5 border border-primary/10 rounded-xl py-2 px-4 pl-10 text-sm focus:outline-none focus:ring-4 focus:ring-primary/10 focus:border-primary/50 hover:border-primary/30 transition-all text-foreground-muted placeholder:text-foreground-dim focus:text-foreground"
               />
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30 transition-colors pointer-events-none group-focus-within/search:text-primary group-hover/search:text-primary" size={16} />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-foreground-dim transition-colors pointer-events-none group-focus-within/search:text-primary group-hover/search:text-primary" size={16} />
             </form>
+            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Toggle */}
-          <button 
-            className="md:hidden p-2 text-white/60 hover:text-white"
-            onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
+            <button 
+              className="p-2 text-foreground-muted hover:text-foreground"
+              onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pt-4 border-t border-white/10 space-y-2 animate-in fade-in slide-in-from-top-4 duration-300">
+          <div className="md:hidden mt-4 pt-4 border-t border-foreground/10 space-y-2 animate-in fade-in slide-in-from-top-4 duration-300">
             <form onSubmit={handleSearch} className="relative mb-4 group/search">
               <input
                 type="text"
                 placeholder="Search movies..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-white/5 border border-primary/10 rounded-xl py-3 px-4 pl-10 text-sm focus:outline-none focus:ring-4 focus:ring-primary/10 focus:border-primary/50 hover:border-primary/30 transition-all focus:text-white"
+                className="w-full bg-foreground/5 border border-primary/10 rounded-xl py-3 px-4 pl-10 text-sm focus:outline-none focus:ring-4 focus:ring-primary/10 focus:border-primary/50 hover:border-primary/30 transition-all focus:text-foreground"
               />
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40 transition-colors group-focus-within/search:text-primary group-hover/search:text-primary" size={16} />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-foreground-muted transition-colors group-focus-within/search:text-primary group-hover/search:text-primary" size={16} />
             </form>
             {navLinks.map((link) => (
               <Link
@@ -107,7 +112,7 @@ export default function Navbar() {
                   "flex items-center gap-3 px-4 py-3 rounded-xl text-base font-medium transition-all group/mob",
                   pathname === link.href
                     ? "bg-primary/15 text-primary border border-primary/20"
-                    : "text-white/60 hover:text-primary hover:bg-primary/10"
+                    : "text-foreground-muted hover:text-primary hover:bg-primary/10"
                 )}
                 onClick={() => setMobileMenuOpen(false)}
               >

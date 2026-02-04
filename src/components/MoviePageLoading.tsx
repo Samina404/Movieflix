@@ -12,7 +12,7 @@ export default function MoviePageLoading({
 }: MoviePageLoadingProps) {
   return (
     <div className="space-y-8 pb-20">
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/5 pb-8">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-card-border pb-8">
         <div className="space-y-4">
           <Skeleton className={`h-12 md:h-16 ${titleWidth}`} />
           <Skeleton className="h-4 w-48" />

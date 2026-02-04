@@ -19,7 +19,7 @@ export default function Loading() {
       <div className="space-y-8">
         <div className="flex items-center gap-4">
           <Skeleton className="h-8 w-48" />
-          <div className="h-px flex-1 bg-white/10" />
+          <div className="h-px flex-1 bg-card-border" />
         </div>
         <MovieGridSkeleton count={12} />
       </div>

@@ -3,12 +3,12 @@ import MovieGridSkeleton from "@/components/MovieGridSkeleton";
 
 export default function Loading() {
   return (
-    <div className="space-y-12 pb-20 bg-[#0a0505] min-h-screen text-white">
+    <div className="space-y-12 pb-20 min-h-screen">
       {/* Hero Header Skeleton */}
-      <section className="relative w-full min-h-[450px] md:h-[500px] overflow-hidden flex items-center rounded-3xl bg-white/[0.02]">
+      <section className="relative w-full min-h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden rounded-[2.5rem] shadow-2xl mx-auto max-w-[98%] mt-4 bg-foreground/5">
         <div className="relative z-10 max-w-7xl mx-auto w-full px-6 flex flex-col md:flex-row gap-10 items-center">
           {/* Poster Skeleton */}
-          <Skeleton className="shrink-0 w-[220px] md:w-[240px] aspect-[2/3] rounded-2xl shadow-2xl" />
+          <Skeleton className="shrink-0 w-[240px] md:w-[320px] aspect-[2/3] rounded-[2rem] shadow-2xl" />
 
           {/* Info Area Skeleton */}
           <div className="flex-1 space-y-6 w-full">
@@ -46,7 +46,7 @@ export default function Loading() {
         <section className="space-y-8">
           <div className="flex items-center gap-4">
             <Skeleton className="h-8 w-32" />
-            <div className="h-px flex-1 bg-white/10" />
+            <div className="h-px flex-1 bg-card-border" />
           </div>
           <div className="grid grid-cols-4 md:grid-cols-8 gap-6">
             {Array.from({ length: 8 }).map((_, i) => (
@@ -63,7 +63,7 @@ export default function Loading() {
         <section className="space-y-8">
           <div className="flex items-center gap-4">
             <Skeleton className="h-8 w-48" />
-            <div className="h-px flex-1 bg-white/10" />
+            <div className="h-px flex-1 bg-card-border" />
           </div>
           <MovieGridSkeleton count={6} />
         </section>

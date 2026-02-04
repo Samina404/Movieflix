@@ -16,8 +16,8 @@ export default function GenreSection({ genreId, genreName, movies }: GenreSectio
     <section className="space-y-8">
       <div className="flex items-end justify-between border-l-4 border-primary/50 pl-6 py-2">
         <div>
-          <h2 className="text-3xl font-black italic uppercase tracking-tighter primary-gradient-text leading-tight">{genreName}</h2>
-          <p className="text-white/40 text-xs mt-1 font-bold uppercase tracking-[0.1em]">Top picks for you</p>
+          <h2 className="text-3xl font-black italic uppercase tracking-tighter primary-gradient-text leading-tight pr-2">{genreName}</h2>
+          <p className="text-foreground-dim text-xs mt-1 font-bold uppercase tracking-[0.1em]">Top picks for you</p>
         </div>
         <Link 
           href={`/genre/${genreId}`} 

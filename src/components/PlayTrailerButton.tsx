@@ -14,7 +14,7 @@ export default function PlayTrailerButton({ videoKey }: PlayTrailerButtonProps) 
     return (
       <button 
         disabled 
-        className="flex items-center gap-2 px-8 py-4 bg-zinc-800 text-zinc-500 font-bold rounded-xl cursor-not-allowed opacity-50"
+        className="flex items-center gap-2 px-8 py-4 bg-foreground/10 text-foreground-dim font-bold rounded-xl cursor-not-allowed opacity-50"
       >
         No Trailer Available
       </button>

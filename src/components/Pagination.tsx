@@ -34,7 +34,7 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
       <button
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="p-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+        className="p-2 rounded-lg bg-foreground/5 border border-card-border hover:bg-foreground/10 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-foreground"
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -48,8 +48,8 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
           className={clsx(
             "w-10 h-10 rounded-lg border text-sm font-medium transition-all",
             currentPage === page
-              ? "bg-primary border-primary text-white shadow-[0_0_15px_rgba(139,92,246,0.5)]"
-              : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10 hover:border-white/20"
+              ? "bg-primary border-primary text-white shadow-lg shadow-primary/40"
+              : "bg-foreground/5 border-card-border text-foreground-muted hover:bg-foreground/10 hover:border-foreground/20"
           )}
         >
           {page}
@@ -59,7 +59,7 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
       <button
         onClick={() => handlePageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="p-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+        className="p-2 rounded-lg bg-foreground/5 border border-card-border hover:bg-foreground/10 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-foreground"
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

@@ -31,38 +31,37 @@ export default async function HomePage() {
               alt={heroMovie.title}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0505] via-[#0a0505]/40 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0a0505] via-transparent to-transparent" />
+            <div className="absolute inset-0 dark:bg-gradient-to-r dark:from-background dark:via-transparent dark:to-transparent hidden md:block" />
             
             <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end max-w-4xl">
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
-                  <span className="px-3 py-1 bg-primary/20 backdrop-blur-md rounded-full text-primary text-xs font-bold uppercase tracking-wider border border-primary/20">
+                  <span className="px-3 py-1 bg-primary/20 rounded-full text-primary text-xs font-bold uppercase tracking-wider border border-primary/20">
                     Featured Movie
                   </span>
-                  <div className="flex items-center gap-1.5 text-white/60 text-sm font-medium">
+                  <div className="flex items-center gap-1.5 text-foreground text-sm font-medium">
                     <Calendar size={14} />
                     <span>{heroMovie.release_date?.split("-")[0]}</span>
                   </div>
                 </div>
 
-                <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-white leading-tight drop-shadow-2xl">
+                <h1 className="text-4xl md:text-7xl font-black tracking-tight text-foreground leading-tight drop-shadow-sm">
                   {heroMovie.title}
                 </h1>
                 
-                <p className="text-white/70 text-base md:text-lg line-clamp-3 max-w-2xl font-medium leading-relaxed">
+                <p className="text-foreground text-base md:text-lg line-clamp-3 max-w-2xl font-medium leading-relaxed">
                   {heroMovie.overview}
                 </p>
 
-                <div className="flex items-center gap-6 text-sm font-semibold text-white/80">
-                   <div className="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-lg border border-white/10">
-                      <Star className="text-yellow-500 fill-yellow-500" size={16} />
-                      <span>{heroMovie.vote_average.toFixed(1)} <span className="text-white/40 font-normal ml-0.5">Rating</span></span>
-                   </div>
-                   <div className="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-lg border border-white/10">
-                      <Users className="text-primary" size={16} />
-                      <span>{heroMovie.vote_count.toLocaleString()} <span className="text-white/40 font-normal ml-0.5">Votes</span></span>
-                   </div>
+                <div className="flex flex-wrap items-center gap-3 md:gap-6 text-sm font-bold">
+                    <div className="flex items-center gap-2 px-3 py-2 bg-background border border-foreground/10 shadow-sm rounded-xl">
+                       <Star className="text-yellow-500 fill-yellow-500" size={16} />
+                       <span className="text-foreground">{heroMovie.vote_average.toFixed(1)} <span className="text-foreground-muted font-medium ml-0.5 hidden sm:inline">Rating</span></span>
+                    </div>
+                    <div className="flex items-center gap-2 px-3 py-2 bg-background border border-foreground/10 shadow-sm rounded-xl">
+                       <Users className="text-primary" size={16} />
+                       <span className="text-foreground">{heroMovie.vote_count.toLocaleString()} <span className="text-foreground-muted font-medium ml-0.5 hidden sm:inline">Votes</span></span>
+                    </div>
                 </div>
 
                 <div className="flex items-center gap-4 pt-4">
@@ -75,7 +74,7 @@ export default async function HomePage() {
                   </Link>
                   <Link 
                     href={`/movie/${heroMovie.id}`} 
-                    className="flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-md text-white rounded-xl font-bold hover:bg-white/20 transition-all border border-white/10"
+                    className="flex items-center gap-3 px-8 py-4 bg-foreground/10 backdrop-blur-md text-foreground rounded-xl font-bold hover:bg-foreground/20 transition-all border border-foreground/10"
                   >
                     <Info size={20} />
                     More Details
@@ -94,8 +93,8 @@ export default async function HomePage() {
       <section className="space-y-8">
         <div className="flex items-end justify-between border-l-4 border-primary/50 pl-6 py-2">
           <div>
-            <h2 className="text-3xl font-black italic uppercase tracking-tighter primary-gradient-text leading-tight">Recent Releases</h2>
-            <p className="text-white/40 text-xs mt-1 font-bold uppercase tracking-[0.1em]">Discover the latest cinema</p>
+            <h2 className="text-3xl font-black tracking-tighter uppercase italic primary-gradient-text leading-tight pr-2">Recent Releases</h2>
+            <p className="text-foreground-dim text-xs mt-1 font-bold uppercase tracking-[0.1em]">Discover the latest cinema</p>
           </div>
           <Link href="/movies" className="text-primary/80 text-xs font-black uppercase tracking-widest hover:text-primary transition-all">
             Browse All
@@ -109,7 +108,7 @@ export default async function HomePage() {
         fallback={
           <div className="space-y-16">
             {[...Array(3)].map((_, i) => (
-              <div key={i} className="h-80 animate-pulse bg-white/5 rounded-3xl" />
+              <div key={i} className="h-80 animate-pulse bg-foreground/5 rounded-3xl" />
             ))}
           </div>
         }

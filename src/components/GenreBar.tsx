@@ -45,15 +45,15 @@ export default function GenreBar({ genres }: GenreBarProps) {
       {showLeftArrow && (
         <button
           onClick={() => scroll("left")}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-[#1a0a0a]/80 backdrop-blur-xl border border-white/10 rounded-2xl text-white shadow-2xl hover:bg-primary hover:text-white transition-all duration-300 -ml-6 md:-ml-4 group-hover/bar:scale-110"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-secondary/80 backdrop-blur-xl border border-card-border rounded-2xl text-foreground shadow-2xl hover:bg-primary hover:text-white transition-all duration-300 -ml-6 md:-ml-4 group-hover/bar:scale-110"
         >
           <ChevronLeft size={24} />
         </button>
       )}
 
       {/* Gradient Fades */}
-      <div className={`absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0a0505] to-transparent z-10 pointer-events-none transition-opacity duration-300 ${showLeftArrow ? "opacity-100" : "opacity-0"}`} />
-      <div className={`absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0a0505] to-transparent z-10 pointer-events-none transition-opacity duration-300 ${showRightArrow ? "opacity-100" : "opacity-0"}`} />
+      <div className={`absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none transition-opacity duration-300 ${showLeftArrow ? "opacity-100" : "opacity-0"}`} />
+      <div className={`absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none transition-opacity duration-300 ${showRightArrow ? "opacity-100" : "opacity-0"}`} />
 
       {/* Scrollable Container */}
       <div
@@ -73,7 +73,7 @@ export default function GenreBar({ genres }: GenreBarProps) {
           <Link
             key={genre.id}
             href={`/genre/${genre.id}`}
-            className="flex-shrink-0 px-6 py-3 bg-white/5 border border-white/10 rounded-2xl text-sm font-bold text-white/70 hover:bg-primary/20 hover:text-primary hover:border-primary/30 hover:scale-105 shadow-sm hover:shadow-primary/10 transition-all whitespace-nowrap"
+            className="flex-shrink-0 px-6 py-3 bg-foreground/5 border border-card-border rounded-2xl text-sm font-bold text-foreground-muted hover:bg-primary/20 hover:text-primary hover:border-primary/30 hover:scale-105 shadow-sm hover:shadow-primary/10 transition-all whitespace-nowrap"
           >
             {genre.name}
           </Link>
@@ -84,7 +84,7 @@ export default function GenreBar({ genres }: GenreBarProps) {
       {showRightArrow && (
         <button
           onClick={() => scroll("right")}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-[#1a0a0a]/80 backdrop-blur-xl border border-white/10 rounded-2xl text-white shadow-2xl hover:bg-primary hover:text-white transition-all duration-300 -mr-6 md:-mr-4 group-hover/bar:scale-110"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-secondary/80 backdrop-blur-xl border border-card-border rounded-2xl text-foreground shadow-2xl hover:bg-primary hover:text-white transition-all duration-300 -mr-6 md:-mr-4 group-hover/bar:scale-110"
         >
           <ChevronRight size={24} />
         </button>

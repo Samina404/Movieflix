@@ -3,7 +3,7 @@ import MovieGrid from "@/components/MovieGrid";
 import RecentlyViewedHandler from "@/components/RecentlyViewedHandler";
 import WatchLaterButton from "@/components/WatchLaterButton";
 import Link from "next/link";
-import { Play, Calendar, Star, Clapperboard } from "lucide-react";
+import { Play, Calendar, Star, Clapperboard, Clock } from "lucide-react";
 import PlayTrailerButton from "@/components/PlayTrailerButton";
 
 export default async function MovieDetailsPage({ params }: { params: { id: string } }) {
@@ -20,83 +20,78 @@ export default async function MovieDetailsPage({ params }: { params: { id: strin
     .slice(0, 16);
 
   return (
-    <div className="space-y-12 pb-20 bg-[#0a0505] min-h-screen text-white">
+    <div className="space-y-12 pb-20 min-h-screen">
       <RecentlyViewedHandler movie={movie} />
 
-      {/* Hero Header Section - Reduced complexity and height */}
-      <section className="relative w-full min-h-[450px] md:h-[500px] overflow-hidden flex items-center rounded-3xl group shadow-2xl">
-        {/* Subtle Blurred Background */}
-        <div className="absolute inset-0 z-0">
+      {/* Hero Header Section */}
+      <section className="relative w-full min-h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden rounded-[2.5rem] shadow-2xl mx-auto max-w-[98%] mt-4">
+        {/* Cinematic Backdrop */}
+        <div className="absolute inset-0">
           <img
             src={`https://image.tmdb.org/t/p/original${movie.backdrop_path || movie.poster_path}`}
             alt=""
-            className="w-full h-full object-cover blur-xl opacity-80 transform scale-110"
+            className="w-full h-full object-cover transform scale-105 opacity-40 dark:opacity-60 transition-transform duration-1000"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0505] via-transparent to-transparent" />
+          {/* Subtle Overlays for readability without "blur" */}
+          <div className="absolute inset-0 dark:bg-gradient-to-t dark:from-background dark:via-transparent dark:to-background/20" />
+          <div className="absolute inset-0 dark:bg-gradient-to-r dark:from-background/40 dark:via-transparent dark:to-transparent hidden md:block" />
         </div>
 
         {/* Content Container */}
-        <div className="relative z-10 max-w-7xl mx-auto w-full px-6 flex flex-col md:flex-row gap-10 items-center md:items-center">
-          {/* Smaller, Professional Poster */}
-          <div className="shrink-0 w-[220px] md:w-[240px] shadow-2xl rounded-2xl overflow-hidden border border-white/10 aspect-[2/3] bg-gradient-to-br from-white/5 to-transparent">
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-12 py-12 flex flex-col md:flex-row gap-12 items-center">
+          {/* Elevated Poster */}
+          <div className="shrink-0 w-[240px] md:w-[320px] shadow-[0_20px_50px_rgba(0,0,0,0.3)] rounded-[2rem] overflow-hidden border-4 border-white/10 aspect-[2/3] transform hover:scale-[1.02] transition-transform duration-500">
              {movie.poster_path ? (
                <img
-                  src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                  src={`https://image.tmdb.org/t/p/w780${movie.poster_path}`}
                   alt={movie.title}
                   className="w-full h-full object-cover"
                />
              ) : (
-               <div className="w-full h-full flex flex-col items-center justify-center gap-4 bg-white/5 transition-all group-hover:bg-white/10">
-                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20 transition-transform group-hover:scale-110">
-                   <Clapperboard className="text-primary/40" size={32} />
-                 </div>
+               <div className="w-full h-full flex flex-col items-center justify-center gap-4 bg-foreground/5 transition-all">
+                 <Clapperboard className="text-primary/40" size={48} />
                </div>
              )}
           </div>
 
-          {/* Right: Info Area */}
-          <div className="flex-1 space-y-6 text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              {movie.title}
-            </h1>
-
-            <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm">
-              <div className="flex items-center gap-2">
-                 <span className="text-[#f59e0b] font-black tracking-tighter text-xl">IMDb</span>
-                 <span className="text-xl font-bold">{movie.vote_average.toFixed(1)}</span>
-              </div>
+          {/* Detailed Info Area */}
+          <div className="flex-1 space-y-8 text-center md:text-left">
+            <div className="space-y-4">
+              <h1 className="text-4xl md:text-7xl font-[900] tracking-tighter leading-[1.1] text-foreground">
+                {movie.title}
+              </h1>
               
-              <div className="flex items-center gap-2 text-white/60">
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span>{movie.runtime} min</span>
-              </div>
-
-              <div className="flex items-center gap-2 text-white/60">
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <span>{movie.release_date.split('-')[0]}</span>
+              <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
+                {movie.genres.map((g) => (
+                  <span key={g.id} className="genre-tag">
+                    {g.name}
+                  </span>
+                ))}
               </div>
             </div>
 
-            <p className="text-base md:text-lg text-white/70 leading-relaxed max-w-3xl line-clamp-3 md:line-clamp-none">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-6">
+               <div className="info-chip gap-2.5">
+                  <span className="text-[#f59e0b] font-black tracking-tighter text-xl">IMDb</span>
+                  <span className="text-xl font-black text-foreground">{movie.vote_average.toFixed(1)}</span>
+               </div>
+               
+               <div className="info-chip gap-3 text-foreground font-bold">
+                 <Clock size={18} className="text-primary" />
+                 <span>{movie.runtime} min</span>
+               </div>
+
+               <div className="info-chip gap-3 text-foreground font-bold">
+                 <Calendar size={18} className="text-primary" />
+                 <span>{movie.release_date.split('-')[0]}</span>
+               </div>
+            </div>
+
+            <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed max-w-3xl line-clamp-4 md:line-clamp-none opacity-90">
               {movie.overview}
             </p>
 
-            <div className="flex flex-wrap items-center justify-center md:justify-start gap-2">
-              {movie.genres.map((g) => (
-                <span
-                  key={g.id}
-                  className="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-semibold text-white/80"
-                >
-                  {g.name}
-                </span>
-              ))}
-            </div>
-
-            <div className="pt-4 flex flex-wrap justify-center md:justify-start gap-4">
+            <div className="pt-6 flex flex-wrap justify-center md:justify-start gap-6">
                <PlayTrailerButton videoKey={trailer?.key || null} />
                <WatchLaterButton movie={movie} />
             </div>
@@ -106,31 +101,33 @@ export default async function MovieDetailsPage({ params }: { params: { id: strin
 
       {/* Main Content Sections */}
       <div className="max-w-7xl mx-auto px-6 space-y-16">
-        {/* Cast List Section - Restored and updated */}
-        <section className="space-y-8">
-          <div className="flex items-center gap-4">
-            <h2 className="text-2xl font-bold tracking-tight">Top Cast</h2>
-            <div className="h-px flex-1 bg-white/10" />
+        {/* Cast List Section */}
+        <section className="space-y-10">
+          <div className="flex items-center justify-between">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-black tracking-tighter uppercase italic primary-gradient-text leading-tight pr-2">Top Cast</h2>
+              <div className="h-1 w-20 bg-primary/30 rounded-full" />
+            </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-10">
             {movie.credits.cast.slice(0, 8).map((person) => (
-              <div key={person.id} className="group space-y-3">
-                <div className="aspect-square rounded-full overflow-hidden border-2 border-white/5 group-hover:border-primary/50 transition-all">
+              <div key={person.id} className="group space-y-4">
+                <div className="cast-avatar group-hover:border-primary">
                   {person.profile_path ? (
                     <img
                       src={`https://image.tmdb.org/t/p/w300${person.profile_path}`}
                       alt={person.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                   ) : (
-                    <div className="w-full h-full bg-white/5 flex items-center justify-center text-white/20 text-xl font-bold">
+                    <div className="w-full h-full bg-foreground/5 flex items-center justify-center text-foreground-dim text-3xl font-black">
                       {person.name.charAt(0)}
                     </div>
                   )}
                 </div>
-                <div className="text-center">
-                  <h4 className="font-bold text-xs line-clamp-1">{person.name}</h4>
-                  <p className="text-[10px] text-white/40 line-clamp-1">{person.character}</p>
+                <div className="text-center space-y-1">
+                  <h4 className="font-black text-sm line-clamp-1 text-foreground leading-none">{person.name}</h4>
+                  <p className="text-[11px] font-bold text-foreground-dim uppercase tracking-wider line-clamp-1">{person.character}</p>
                 </div>
               </div>
             ))}
@@ -138,10 +135,12 @@ export default async function MovieDetailsPage({ params }: { params: { id: strin
         </section>
 
         {/* Recommended Section */}
-        <section className="space-y-8">
-           <div className="flex items-center gap-4">
-              <h2 className="text-2xl font-bold tracking-tight">Recommended for You</h2>
-              <div className="h-px flex-1 bg-white/10" />
+        <section className="space-y-10">
+           <div className="flex items-center justify-between">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-black tracking-tighter uppercase italic primary-gradient-text leading-tight pr-2">Similar Movies</h2>
+                <div className="h-1 w-20 bg-primary/30 rounded-full" />
+              </div>
            </div>
           <MovieGrid movies={similarMovies} />
         </section>

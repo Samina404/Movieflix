@@ -3,14 +3,24 @@
 import { Movie } from "@/types/movie";
 import { useWatchLaterStore } from "@/store/watchLaterStore";
 import { clsx } from "clsx";
+import { toast } from "sonner";
 
 export default function WatchLaterButton({ movie }: { movie: Movie }) {
   const { toggleWatchLater, isInWatchLater } = useWatchLaterStore();
   const isFavorite = isInWatchLater(movie.id);
 
+  const handleToggle = () => {
+    toggleWatchLater(movie);
+    if (!isFavorite) {
+      toast.success(`"${movie.title}" added to watch later`);
+    } else {
+      toast.info(`"${movie.title}" removed from watch later`);
+    }
+  };
+
   return (
     <button
-      onClick={() => toggleWatchLater(movie)}
+      onClick={handleToggle}
       className={clsx(
         "flex items-center gap-3 px-8 py-4 rounded-xl font-bold transition-all duration-300 active:scale-95 border group/watch",
         isFavorite

@@ -5,10 +5,24 @@ import MovieGrid from "@/components/MovieGrid";
 import { Trash2 } from "lucide-react";
 import { useStore } from "@/hooks/useStore";
 import MoviePageLoading from "@/components/MoviePageLoading";
+import { toast } from "sonner";
 
 export default function RecentlyViewedPage() {
   const movies = useStore(useRecentlyViewedStore, (state) => state.movies) || [];
   const { clearRecentlyViewed } = useRecentlyViewedStore();
+
+  const handleClearHistory = () => {
+    toast.error("Clear viewing history?", {
+      description: "This action cannot be undone.",
+      action: {
+        label: "Clear All",
+        onClick: () => {
+          clearRecentlyViewed();
+          toast.success("Viewing history cleared");
+        },
+      },
+    });
+  };
 
   if (movies === null) return <MoviePageLoading titleWidth="w-80" count={6} />;
 
@@ -26,11 +40,7 @@ export default function RecentlyViewedPage() {
 
         {movies.length > 0 && (
           <button
-            onClick={() => {
-              if (confirm("Are you sure you want to clear your viewing history?")) {
-                clearRecentlyViewed();
-              }
-            }}
+            onClick={handleClearHistory}
             className="flex items-center gap-2 px-4 py-2 bg-foreground/5 hover:bg-red-900/20 text-foreground-muted hover:text-red-500 border border-card-border hover:border-red-500/30 rounded-lg transition-all text-sm font-bold uppercase tracking-wider group"
           >
             <Trash2 size={16} className="group-hover:scale-110 transition-transform" />

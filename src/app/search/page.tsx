@@ -22,17 +22,17 @@ export default async function SearchPage({
         {/* Background Decorative Glow */}
         <div className="absolute -top-24 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-[100px] -z-10" />
         
-        <div className="border-b border-white/5 pb-12">
+        <div className="border-b border-foreground/10 pb-12">
           <h1 className="text-5xl md:text-7xl font-black italic uppercase tracking-tighter primary-gradient-text leading-none">
             {query ? `Search: ${query}` : "Search Movies"}
           </h1>
           {query && (
             <div className="flex items-center gap-4 mt-6">
-              <p className="text-white/50 text-base font-medium">
-                Found <span className="text-white font-bold">{moviesData?.total_results.toLocaleString()}</span> results for your query
+              <p className="text-foreground-muted text-base font-medium">
+                Found <span className="text-foreground font-bold">{moviesData?.total_results.toLocaleString()}</span> results for your query
               </p>
-              <div className="h-4 w-px bg-white/10" />
-              <p className="text-white/30 text-sm italic">
+              <div className="h-4 w-px bg-foreground/10" />
+              <p className="text-foreground-dim text-sm italic">
                 Showing results for &quot;{query}&quot;
               </p>
             </div>
@@ -51,7 +51,7 @@ export default async function SearchPage({
           )}
         </>
       ) : (
-        <div className="flex flex-col items-center justify-center py-20 text-white/20">
+        <div className="flex flex-col items-center justify-center py-20 text-foreground/20">
           <svg className="w-20 h-20 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>

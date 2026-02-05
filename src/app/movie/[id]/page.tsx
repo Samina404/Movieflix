@@ -5,8 +5,31 @@ import WatchLaterButton from "@/components/WatchLaterButton";
 import Link from "next/link";
 import { Play, Calendar, Star, Clapperboard, Clock } from "lucide-react";
 import PlayTrailerButton from "@/components/PlayTrailerButton";
+import { Metadata } from "next";
 
-export default async function MovieDetailsPage({ params }: { params: { id: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params;
+  const movie = await getMovieDetails(id);
+
+  return {
+    title: movie.title,
+    description: movie.overview,
+    openGraph: {
+      title: `${movie.title} - MovieFlix`,
+      description: movie.overview,
+      images: [
+        {
+          url: `https://image.tmdb.org/t/p/w1280${movie.backdrop_path || movie.poster_path}`,
+          width: 1280,
+          height: 720,
+          alt: movie.title,
+        },
+      ],
+    },
+  };
+}
+
+export default async function MovieDetailsPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const movie = await getMovieDetails(id);
   const similarData = await getSimilarMovies(id);

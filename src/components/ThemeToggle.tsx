@@ -15,14 +15,14 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 animate-pulse" />
+      <div className="w-10 h-10 rounded-xl bg-white/5 animate-pulse" />
     );
   }
 
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="relative w-10 h-10 flex items-center justify-center rounded-xl bg-secondary border border-card-border hover:border-primary/50 transition-all duration-300 group overflow-hidden"
+      className="relative w-10 h-10 flex items-center justify-center rounded-xl bg-secondary hover:bg-secondary/80 transition-all duration-300 group overflow-hidden"
       aria-label="Toggle theme"
     >
       <div className="relative w-5 h-5 overflow-hidden">

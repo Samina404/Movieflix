@@ -25,7 +25,7 @@ export default async function HomePage() {
       <div className="-space-y-4">
         {/* Hero Section */}
         {heroMovie && (
-          <section className="relative w-full aspect-[21/9] min-h-[450px] rounded-3xl overflow-hidden group shadow-2xl">
+          <section className="relative w-full aspect-[4/5] md:aspect-[21/9] min-h-[500px] md:min-h-[450px] rounded-3xl overflow-hidden group shadow-2xl">
             <img
               src={`https://image.tmdb.org/t/p/original${heroMovie.backdrop_path}`}
               alt={heroMovie.title}
@@ -33,7 +33,7 @@ export default async function HomePage() {
             />
             <div className="absolute inset-0 dark:bg-gradient-to-r dark:from-background dark:via-transparent dark:to-transparent hidden md:block" />
             
-            <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end max-w-4xl">
+            <div className="absolute inset-0 p-6 md:p-16 flex flex-col justify-end max-w-4xl">
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
                   <span className="px-3 py-1 bg-primary/20 rounded-full text-primary text-xs font-bold uppercase tracking-wider border border-primary/20">

@@ -5,6 +5,7 @@ import { Movie } from "@/types/movie";
 import { useWatchLaterStore } from "@/store/watchLaterStore";
 import { clsx } from "clsx";
 import { Star, Bookmark, Play, Clapperboard } from "lucide-react";
+import { toast } from "sonner";
 
 interface MovieCardProps {
   movie: Movie;
@@ -19,6 +20,17 @@ export default function MovieCard({ movie }: MovieCardProps) {
   );
 
   const isFavoriteBool = !!isFavorite;
+
+  const handleToggle = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleWatchLater(movie);
+    if (!isFavoriteBool) {
+      toast.success(`"${movie.title}" added to watch later`);
+    } else {
+      toast.info(`"${movie.title}" removed from watch later`);
+    }
+  };
 
   return (
     <div className="group relative movie-card">
@@ -55,11 +67,7 @@ export default function MovieCard({ movie }: MovieCardProps) {
 
       {/* Action Button */}
       <button
-        onClick={(e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          toggleWatchLater(movie);
-        }}
+        onClick={handleToggle}
         className={clsx(
           "absolute top-3 right-3 p-2.5 rounded-xl backdrop-blur-md transition-all duration-300 z-20 border border-foreground/10 shadow-lg",
           isFavoriteBool 
